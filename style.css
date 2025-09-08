@@ -18,6 +18,10 @@
 }
 
 #topnavbar img {
-    height: 60%;
+    height: 40px;
     width: auto;
+}
+
+body {
+    padding-top: 75px;
 }
