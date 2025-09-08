@@ -9,7 +9,7 @@ html, body{
     position: fixed;
     top: 0;
     left: 0;
-    height: 75px;
+    height: 60px;
     width: 100%;
     background: 
     linear-gradient(90deg,
@@ -20,17 +20,17 @@ html, body{
         rgba(84, 49, 3, 1) 100%);
     display: flex;
     justify-content: flex-start;
-    padding-left: 20px;
+    padding: 20px 20px 0 20px;
 }
 
 /*Keep img inside navbar*/
 #topnavbar img {
-    height: 40px;
+    height: 30px;
     width: auto;
-    margin-top: 15px;
+    display: block;
 }
 
 /*Account for navbar*/
 body {
-    padding-top: 85px;
+    padding-top: 100px;
 }
