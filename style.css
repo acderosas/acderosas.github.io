@@ -3,7 +3,7 @@
     position: fixed;
     top: 0;
     left: 0;
-    height: 200px;
+    height: 100px;
     width: 100%;
     background: 
     linear-gradient(90deg,
@@ -17,6 +17,6 @@
 }
 
 #topnavbar img {
-    height: 200px;
+    height: 100px;
     width: auto;
 }
