@@ -1,0 +1,10 @@
+/*Color Gradient for Header*/
+header {
+    background: 
+    linear-gradient(90deg,
+        rgba(10,10,10,1) 0%,
+        rgba(10,10,10,1) 8%,
+        rgba(102, 63, 0, 1), 33%, 
+        rgba(23, 9, 9, 1) 79%, 
+        rgba(84, 49 3, 1) 100%);
+}
