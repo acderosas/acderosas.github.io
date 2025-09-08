@@ -4,6 +4,19 @@ html, body{
     padding: 0;
 }
 
+/*Account for navbar*/
+body {
+    padding-top: 100px;
+    font-family: 'EB Garamond';font-size: 15px;
+}
+
+/*Using a gradient for text sample*/
+h1 {
+  background: linear-gradient(to right, grey, black);
+  background-clip: text;
+  color: transparent;
+}
+
 /*Color Gradient for Top navigation bar*/
 #topnavbar {
     position: fixed;
@@ -30,7 +43,11 @@ html, body{
     display: block;
 }
 
-/*Account for navbar*/
-body {
-    padding-top: 100px;
+/*Keep soundcloud player at the bottom*/
+#bottomplayer {
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 0;
 }
+
