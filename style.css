@@ -1,5 +1,5 @@
-/*Color Gradient for Header*/
-header {
+/*Color Gradient for Top navigation bar*/
+#topnavbar {
     background: 
     linear-gradient(90deg,
         rgba(10, 10, 10, 1) 0%,
