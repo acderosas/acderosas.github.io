@@ -10,3 +10,9 @@
         rgba(84, 49, 3, 1) 100%);
     box-sizing: border-box;
 }
+
+#topnavbar img {
+    width: auto;
+    height: 80%;
+    object-fit: contain;
+}
