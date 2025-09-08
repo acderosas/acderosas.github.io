@@ -1,5 +1,8 @@
 /*Color Gradient for Top navigation bar*/
 #topnavbar {
+    position: fixed;
+    top: 0;
+    left: 0;
     height: 100px;
     width: 100%;
     background: 
@@ -15,7 +18,6 @@
 }
 
 #topnavbar img {
-    max-height: 80%;
     height: auto;
     width: auto;
 }
