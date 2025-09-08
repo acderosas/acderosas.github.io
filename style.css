@@ -1,5 +1,6 @@
 /*Color Gradient for Top navigation bar*/
 #topnavbar {
+    height: 100px;
     width: 100%;
     background: 
     linear-gradient(90deg,
@@ -8,11 +9,13 @@
         rgba(102, 63, 0, 1) 33%, 
         rgba(23, 9, 9, 1) 79%, 
         rgba(84, 49, 3, 1) 100%);
-    box-sizing: border-box;
+    display: flex;
+    justify-content: flex-start;
+    padding-left: 20px;
 }
 
 #topnavbar img {
+    max-height: 80%;
+    height: auto;
     width: auto;
-    height: 80%;
-    object-fit: contain;
 }
