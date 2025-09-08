@@ -3,7 +3,7 @@
     position: fixed;
     top: 0;
     left: 0;
-    height: auto;
+    height: 200px;
     width: 100%;
     background: 
     linear-gradient(90deg,
@@ -14,7 +14,6 @@
         rgba(84, 49, 3, 1) 100%);
     display: flex;
     justify-content: flex-start;
-    padding-left: 20px;
 }
 
 #topnavbar img {
