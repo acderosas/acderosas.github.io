@@ -7,7 +7,8 @@ html, body{
 /*Account for navbar*/
 body {
     padding-top: 100px;
-    font-family: 'EB Garamond';font-size: 15px;
+    font-family: 'EB Garamond';
+    font-size: 15px;
 }
 
 /*Using a gradient for text sample*/
@@ -87,13 +88,13 @@ figure {
     --card-w: 240px;
     --card-h: 300px;
     --pad: 14px;
-
-    position: relative;
+    --x-offset: calc(var(--card-w) / 2 + 12px);
+    --y-offset: 8px;
 }
 
 .cards > .photo-spread {
     position: relative;
-    min-height: calc(var(--card-h, 300px) + 2 * var(--pad, 14px) + 24px);
+    min-height: calc(var(--card-h, 300px) + 2 * var(--pad, 14px) + 56px);
     align-self: start;     /*Align to top of About*/
     justify-self: stretch;
 }
@@ -102,7 +103,7 @@ figure {
 .photo-spread .shot {
     position: absolute;
     top: 0; 
-    left: 50%;
+    left: 0;
     width: var(--card-w);
     padding: var(--pad);
     background: #fff;
@@ -114,7 +115,7 @@ figure {
     --angle:    calc(var(--start-rot) + var(--i) * var(--step-rot));
 
     transform:
-        translat(-50%);
+        translate(var(--x-offset), var(--y-offset)) 
         translate(calc(var(--i) * var(--dx)), calc(var(--i) * var(--dy)))
         rotate(var(--angle));
 
@@ -125,7 +126,7 @@ figure {
 .photo-spread .shot img {
     width: 100%;
     height: var(--card-h);
-    object-fit: contain;
+    object-fit: fill;
     border-radius: 8px;
     display: block;
 }
@@ -133,6 +134,7 @@ figure {
 /*Highlight effect*/
 .photo-spread .shot:hover {
     transform:
+        translate(var(--x-offset), var(--y-offset))
         translate(calc(var(--i) * var(--dx)), calc(var(--i) * var(--dy)))
         rotate(0deg) scale(1.02);
     box-shadow: 0 16px 36px rgba(0,0,0,.22), 0 6px 12px rgba(0,0,0,.18);
