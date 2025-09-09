@@ -80,10 +80,12 @@ figure {
     margin: 0;
 }
 
-figcaption {
-    text-align: center;
-    font-weight: 700;
+.photo-spread .cap { 
+    text-align:center; 
+    font-weight:700; 
+    margin-top:.5rem; 
 }
+
 
 .photo-spread {
     --count: 5;
