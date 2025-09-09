@@ -91,13 +91,19 @@ figure {
     position: relative;
 }
 
+.cards > .photo-spread {
+    position: relative;
+    min-height: calc(var(--card-h, 300px) + 2 * var(--pad, 14px) + 24px);
+    align-self: start;     /*Align to top of About*/
+    justify-self: stretch;
+}
+
 /*Make photo cards do a fan*/
 .photo-spread .shot {
     position: absolute;
     top: 0; 
-    left: 0;
+    left: 50%;
     width: var(--card-w);
-    aspect-ratio: 4 / 3;
     padding: var(--pad);
     background: #fff;
     border-radius: 12px;
@@ -108,6 +114,7 @@ figure {
     --angle:    calc(var(--start-rot) + var(--i) * var(--step-rot));
 
     transform:
+        translat(-50%);
         translate(calc(var(--i) * var(--dx)), calc(var(--i) * var(--dy)))
         rotate(var(--angle));
 
