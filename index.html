@@ -1,30 +1,75 @@
 <!DOCTYPE html>
-<!DOCTYPE html>
 <html lang="en">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css"/>
+    <link href="https://fonts.googleapis.com/css?family=EB Garamond" rel="stylesheet"/>
+    <script src="script.js"></script>
     <title>Andre de Rosas' Personal Website</title>
-    <link rel="stylesheet" href="style.css">
-    <link href='https://fonts.googleapis.com/css?family=EB Garamond' rel='stylesheet'>
 </head>
 
 <body>
+    <!--Debating whether to keep it when scrolling or strictly at the top-->
+    <div id="topnavbar">
+        <img src="assets/NameSignature.png" alt="Website Banner">
+    </div>
+  
+    <h1 style="text-align: center;">Welcome</h1>
 
-<div id="topnavbar">
-    <img src="assets/NameSignature.png" alt="Website Banner">
-</div>
+    <!--First navigation item-->
+    <div class="cards">
+        <article class="card">
+            <h3 style="text-align: center;">About Me</h3>
+            <p>Lorem Ipsum…</p>
+        </article>
 
-<h1>Welcome</h1>
-<p>It is I.</p>
+        <!--5 images looking like stack overflow of photo cards-->
+        <div class="photo-spread">
+            <figure class="shot" style="--i:0">
+                <img src="assets/p1.jpg" alt="">
+                <figcaption class="cap">First image</figcaption>
+            </figure>
+        
+            <figure class="shot" style="--i:1">
+                <img src="assets/p2.jpg" alt="">
+                <figcaption class="cap">Second image</figcaption>
+            </figure>
+      
+            <figure class="shot" style="--i:2">
+                <img src="assets/p3.jpg" alt="">
+                <figcaption class="cap">Third image</figcaption>
+            </figure>
+            
+            <figure class="shot" style="--i:3">
+                <img src="assets/p4.jpg" alt="">
+                <figcaption class="cap">Fourth image</figcaption>
+            </figure>
+      
+            <figure class="shot" style="--i:4">
+                <img src="assets/p5.jpg" alt="">
+                <figcaption class="cap">Fifth image</figcaption>
+            </figure>
+        </div>
+    </div>
+  
+    <br>
+  
+    <!--Second navigation Item. Probably a side scroll of img cards-->
+    <article class="card">
+        <h3 style="text-align: center;">Some of my favorite things</h3>
+        <p>Lorem Ipsum</p>
+    </article>
+  
+    <!--Music player. Like no visual better than with visual-->
+    <div id="bottomplayer" role="region" aria-label="SoundCloud player">
+        <iframe scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/2077573953&color=%23ac6c44&auto_play=true&hide_related=false&show_comments=false&show_user=true&show_reposts=false&show_teaser=false&visual=false"></iframe>
+    </div>
 
-<!--Nvm on Spotify since it is snippets for non premium. Going Soundcloud-->
-<!--Using a Playlist instead of a single song-->
-<div id="bottomplayer">
-  <iframe width="100%" height="250" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/2077573953&color=%23ac6c44&auto_play=true&hide_related=false&show_comments=false&show_user=true&show_reposts=false&show_teaser=false&visual=false"></iframe>  
-</div>
-<script src="scripts.js"></script>
-
+    <!--Button for music player collapse and expand logic-->
+    <button id="togglePlayer" class="player-toggle" aria-expanded="false" aria-controls="bottomplayer">Music Player</button>
+  
 </body>
+
 </html>
