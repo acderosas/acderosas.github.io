@@ -1,4 +1,5 @@
 # Andre de Rosas' Website hosted thru GitHub
 
-Link to not have too many commits and be able test:
-https://html-css-js.com/
+Notes:
+Use live server extension on VSCode for live updates
+Neocities influence in terms of navigating off a setting

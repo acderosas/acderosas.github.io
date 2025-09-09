@@ -81,11 +81,10 @@ figure {
 }
 
 .photo-spread .cap { 
-    text-align:center; 
-    font-weight:700; 
-    margin-top:.5rem; 
+    text-align: center; 
+    font-weight: 700; 
+    margin-top: .5rem; 
 }
-
 
 .photo-spread {
     --count: 5;
