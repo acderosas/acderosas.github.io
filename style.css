@@ -47,10 +47,12 @@ h1 {
 /*Cards formatted to a grid*/
 .cards {
     display: grid;
-    grid-template-columns: repeat(2, minmax(0, 1fr)); /* Have 2 columns */
-    gap: 1rem;                                        
+    grid-template-columns: 340px minmax(0,1fr);
+    column-gap: 2rem;
+    row-gap: 2rem;                                        
     max-width: 1000px;
     margin-inline: auto;
+    padding: 0 20px;
 }
 @media (max-width: 800px) { 
     .cards { 
@@ -79,8 +81,8 @@ figure {
 
 .photo-spread {
     --count: 5;
-    --dx: 40px;          /* separating cards */
-    --dy: -10px;         /* negative num means going up */
+    --dx: 40px;          /*Separating cards*/
+    --dy: -10px;         /*Negative num means going up*/
     --start-rot: -12deg; 
     --card-w: 240px;
     --card-h: 300px;
@@ -101,7 +103,7 @@ figure {
     border-radius: 12px;
     box-shadow: 0 10px 20px rgba(0,0,0,.15), 0 2px 6px rgba(0,0,0,.12);
 
-    /* Photo cards angle then straighten at the top */
+    /*Photo cards angle then straighten at the top*/
     --step-rot: calc((0deg - var(--start-rot)) / max(1, (var(--count) - 1)));
     --angle:    calc(var(--start-rot) + var(--i) * var(--step-rot));
 
@@ -110,7 +112,7 @@ figure {
         rotate(var(--angle));
 
     transition: transform .25s ease, box-shadow .25s ease;
-    z-index: calc(10 + var(--i)); /* rightmost cards on top */
+    z-index: calc(10 + var(--i)); /*Rightmost card on top*/
 }
 
 .photo-spread .shot img {
@@ -136,7 +138,7 @@ figure {
     left: 0;
     right: 0;
     bottom: 0;
-    transform: translateY(100%); /* hidden by default */
+    transform: translateY(100%); /*Hidden by default*/
     transition: transform 200ms ease;
     z-index: 9999;
 }
