@@ -85,6 +85,8 @@ figure {
     --card-w: 240px;
     --card-h: 300px;
     --pad: 14px;
+
+    position: relative;
 }
 
 /*Make photo cards do a fan*/
