@@ -52,6 +52,11 @@ h1 {
     max-width: 1000px;
     margin-inline: auto;
 }
+@media (max-width: 800px) { 
+    .cards { 
+        grid-template-columns: 1fr; 
+    } 
+}
 
 .card {
     border: 1px solid #ddd;
@@ -66,6 +71,10 @@ h1 {
 
 .card--overflow-visible { 
     overflow: visible; 
+}
+
+figure {
+    margin: 0;
 }
 
 .photo-spread {
