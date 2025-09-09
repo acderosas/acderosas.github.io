@@ -80,6 +80,11 @@ figure {
     margin: 0;
 }
 
+figcaption {
+    text-align: center;
+    font-weight: 700;
+}
+
 .photo-spread {
     --count: 5;
     --dx: 40px;          /*Separating cards*/
