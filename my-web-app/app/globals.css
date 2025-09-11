@@ -1,0 +1,233 @@
+/**If I want some tailwind components*******************************************************/
+@import "tailwindcss";
+
+/*******************Resets******************************************************************/
+:root { 
+  --header-h: 60px; 
+}
+
+html, body { 
+  margin: 0; 
+  height: 100%;
+}
+
+/*******************Color Gradient Header***************************************************/
+#gradientheader {
+  position: sticky;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 60px;
+  background: 
+    linear-gradient(90deg,
+      rgba(10, 10, 10, 1) 0%,
+      rgba(10, 10, 10, 1) 8%,
+      rgba(102, 63, 0, 1) 33%, 
+      rgba(23, 9, 9, 1) 79%, 
+      rgba(84, 49, 3, 1) 100%);
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 20px 20px 0 20px;
+  z-index: 10001; /*Pinned to the top*/
+}
+
+#gradientheader img {
+  max-height: 100%;
+  height: auto;
+  width: auto;
+  display: block;
+  transform: translateY(-10px);
+}
+
+/*******************Music Player************************************************************/
+#bottomplayer {
+  position: fixed;
+  left: 0; right: 0; bottom: 0;
+  transform: translateY(100%); /* hidden by default */
+  transition: transform 200ms ease;
+  z-index: 9999;
+  background: #000;
+}
+
+#bottomplayer.open {
+  transform: translateY(0);
+}
+
+#bottomplayer iframe {
+  display: block;
+  width: 100%;
+  height: 310px;
+  border: 0;
+}
+
+/*******************Flip book**************************************************************/
+:root {
+  --book-bg: #f7f5ef;
+  --paper: #fff;
+  --ink: #222;
+  --accent: #ac6c44;
+  --shadow: 0 12px 36px rgba(0,0,0,.18);
+}
+
+.flipbook-shell {
+  min-height: calc(100dvh - var(--header-h, 0px));
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 14px;
+  padding: clamp(12px, 2vw, 24px);
+  background: radial-gradient(1200px 600px at 50% 0%, #f3efe6 0%, #ebe5d8 60%, #e6dfcf 100%);
+}
+
+.book {
+  height: clamp(420px, 70dvh, 760px);
+  width: auto;  
+  background: var(--book-bg);
+  border-radius: 16px;
+  box-shadow: var(--shadow);
+  position: relative;
+  overflow: hidden;
+
+  perspective: 1500px;
+  transform-style: preserve-3d;
+
+  --gutter: 14px;
+}
+
+.book-stage {
+  min-height: calc(100dvh - var(--header-h));
+  display: grid;
+  place-items: center;
+}
+
+.book--closed { 
+  aspect-ratio: 3 / 4; 
+}
+
+.book--open { 
+  aspect-ratio: 16 / 10; 
+}
+
+.book--open .cover { 
+  display: none; 
+}
+
+.book--closed .spread { 
+  display: none; 
+}
+
+.cover {
+  position: absolute; inset: 0;
+  display: grid; place-items: center;
+  text-align: center;
+  padding: clamp(16px, 3vw, 32px);
+  color: var(--ink);
+  background: linear-gradient(120deg, #faf7f0, #efe8d7 35%, #e7dfcc);
+  border-radius: 16px; 
+}
+
+.cover h2 {
+  margin: 0;
+  font-size: clamp(22px, 3.2vw, 34px);
+}
+
+.cover .muted { opacity: .7; }
+
+.spread{
+  position: absolute; inset: 0;
+  display: grid;
+  grid-template-columns: 1fr 14px 1fr;
+  gap: 0;
+  padding: clamp(14px, 2.2vw, 28px);
+}
+
+.spread.single {
+  grid-template-columns: 1fr;
+  place-items: center;
+}
+
+.gutter {
+  background: linear-gradient(#d8cdb5, #b7ab95);
+  border-left: 1px solid rgba(0,0,0,.08);
+  border-right: 1px solid rgba(0,0,0,.08);
+  border-radius: 3px;
+}
+
+.page {
+  display: grid;
+  grid-template-rows: 1fr auto;
+  align-items: stretch;
+  gap: 8px;
+  padding: clamp(8px, 1.6vw, 16px);
+  overflow: hidden;
+}
+
+.photo {
+  position: relative;
+  width: 100%;
+  aspect-ratio: var(--photo-ar, 4 / 3);
+  background: #f3f3f3;           
+  border-radius: 8px;
+
+  min-width: 0;
+  min-height: 0;
+}
+
+.cap {
+  margin: 0;
+  font-size: .9rem;
+  color: #444;
+  text-align: center;
+}
+
+.page--empty {
+  background: repeating-linear-gradient(45deg, #fafafa, #fafafa 10px, #f1f1f1 10px, #f1f1f1 20px);
+  opacity: .7;
+}
+
+.spread-meta {
+  position: absolute;
+  right: 12px;
+  bottom: 10px;
+  font-size: .85rem;
+  color: #666;
+}
+
+.book-controls {
+  display: flex;
+  gap: 8px;
+  justify-content: center;
+}
+
+.btn {
+  padding: .6rem 1rem;
+  border-radius: 999px;
+  border: 1px solid #cfcfcf;
+  background: #fff;
+  cursor: pointer;
+  font: 600 14px/1 system-ui, sans-serif;
+}
+
+.btn:hover { 
+  background: #f6f6f6; 
+}
+
+.btn[disabled], .btn[aria-disabled="true"] { 
+  opacity: .55; cursor: not-allowed; 
+}
+
+.btn--primary { 
+  border-color: var(--accent); 
+  color: var(--accent); 
+}
+
+.btn--primary:hover {
+  background: color-mix(in oklab, var(--accent) 12%, white);
+}
+
+.btn--secondary { 
+  background: #222; 
+  color: #fff; 
+  border-color: #222; 
+}
