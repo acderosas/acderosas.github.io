@@ -12,8 +12,6 @@ export default function GradientHeader() {
                     width =  {100}
                     height = {30}
                     placeholder= "empty" // Only works if imported
-                    priority style={{ height: "auto", width: "auto" }}
-                    className = "object-contain"
                 />
             </Link>
         </div>

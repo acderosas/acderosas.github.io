@@ -17,7 +17,7 @@ html, body {
   top: 0;
   left: 0;
   width: 100%;
-  height: var(--header-h);
+  height: 60px;
   background: 
     linear-gradient(90deg,
       rgba(10, 10, 10, 1) 0%,
@@ -34,10 +34,10 @@ html, body {
 
 #gradientheader img {
   max-height: 100%;
-  height: auto;
+  height: 30px;
   width: auto;
   display: block;
-  transform: none;
+  transform: translateY(-10px);
 }
 
 /*******************Music Player************************************************************/
