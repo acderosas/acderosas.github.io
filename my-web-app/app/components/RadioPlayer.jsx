@@ -23,7 +23,7 @@ export default function RadioPlayer({
   // Autoplay enabled
   const iframeSrc = `https://w.soundcloud.com/player/?url=${encodeURIComponent(
     playlistUrl
-  )}&color=${encodeURIComponent(color)}&auto_play=true&hide_related=false&show_comments=false&show_user=true&show_reposts=false&show_teaser=false&visual=false`;
+  )}&color=${encodeURIComponent(color)}&auto_play=false&hide_related=false&show_comments=false&show_user=true&show_reposts=false&show_teaser=false&visual=false`;
 
   return (
     <div

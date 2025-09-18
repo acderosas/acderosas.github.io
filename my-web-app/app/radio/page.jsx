@@ -1,7 +1,17 @@
+import radioplay from "../../public/rdradio.png";
+import Image from "next/image";
+
 export default function Radio() {
     return (
         <main>
-            <h2>Radio</h2>
+            <Image
+                      src={radioplay}
+                      alt=""
+                      fill
+                      priority
+                      className="object-contain z-0"
+                      aria-hidden
+                    />
         </main>
     )
 }
