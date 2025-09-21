@@ -9,7 +9,7 @@ const Intro = (
       Computer Science (CS) was never really on my radar until I took a CS class in high school.
       It was interesting to learn about binary, HTML, how to use Scratch, and even program a toy car to move!
       So when it came to choosing a major I was interested in pursuing Computer Science. I went to Folsom Lake College where I started learning
-      about C++ and data structures (along with the GED's). Then going to Chico State, I was able to build on what I learned in C++ and learn even more
+      about C++ and data structures (along with the GE's). Then going to Chico State, I was able to build on what I learned in C++ and learn even more
       about data structures, languages, frameworks, version control, OS, ML, and learn how to create projects by myself and with a team.
       Really enjoying building my techstack, expanding my horizons on what I can see but also what I can create and build using CS.
       Next, I'll just be going over some of my favorite things outside of CS to paint somewhat of a picture of who I am.
