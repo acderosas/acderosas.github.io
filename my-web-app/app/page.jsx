@@ -55,7 +55,18 @@ const HOTSPOTS = [
     w: 112, 
     h: 229, 
     label: "Yellow Pages: Contact me" 
+  },
+
+  { 
+    href: "/art", 
+    x: 1030, 
+    y: 730, 
+    w: 112, 
+    h: 229, 
+    label: "Artbook: Art" 
   }
+
+  // One for projects once I made a couple more
 
 ];
 
