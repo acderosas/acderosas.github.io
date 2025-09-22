@@ -1,4 +1,4 @@
-import radioplay from "../../public/RDRadio.png";
+import radioplay from "../../public/rdradio.png";
 import Image from "next/image";
 
 export default function Radio() {
