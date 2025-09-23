@@ -151,12 +151,12 @@ export default function AboutPage() {
       items={PAGES}
       frontTitle="About Me"
       theme={{
-        coverBg:   'linear-gradient(135deg,#2c3e50,#4b5563)',
-        coverInk:  '#f1f5f9',
-        pageBg:    '#fffdf8',
-        ink:       '#1f2937',
-        gutterBg:  'linear-gradient(#d6ccb9,#b8ac99)',
-        accent:    '#ac6c44',
+        coverBg:   'linear-gradient(135deg,#4D331A,#4D331A)',
+        coverInk:  '#4D331A',
+        pageBg:    '#4D331A',
+        ink:       '#4D331A',
+        gutterBg:  'linear-gradient(#4D331A,#b4D331A)',
+        accent:    '#4D331A',
       }}
     />
   );
